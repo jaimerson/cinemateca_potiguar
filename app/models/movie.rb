@@ -5,7 +5,7 @@ class Movie < ApplicationRecord
   belongs_to :director, class_name: 'Filmmaker', required: false
   belongs_to :screenwriter, class_name: 'Filmmaker', required: false
 
-  validates :title, :genre, :country, :rack, :shelf,
+  validates :title, :genre, :country, :rack, :shelf, :length_in_minutes,
     presence: true
 
   enum category: {
