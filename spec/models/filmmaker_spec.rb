@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Filmmaker do
+RSpec.describe Filmmaker, type: :model do
   describe 'validations' do
     it 'is not valid without name' do
       expect(described_class.new).not_to be_valid
