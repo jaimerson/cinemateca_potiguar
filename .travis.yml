@@ -2,6 +2,6 @@ language: ruby
 rvm:
   - 2.5.1
 before_script:
-  - RAILS_ENV=test rake db:schema:load
+  - RAILS_ENV=test bundle exec rake db:schema:load
 script:
   - bundle exec rspec
