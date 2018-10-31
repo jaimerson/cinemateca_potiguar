@@ -1,6 +1,5 @@
 class Movie < ApplicationRecord
   belongs_to :genre
-  belongs_to :country
   belongs_to :country, required: false
   belongs_to :director, class_name: 'Filmmaker', required: false
   belongs_to :screenwriter, class_name: 'Filmmaker', required: false
